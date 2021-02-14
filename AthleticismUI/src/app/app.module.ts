@@ -1,25 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
-import { ReviewsComponent } from './reviews/reviews.component';
+import { HeaderModule } from './header/header.module';
+import { NavbarMenuComponent } from './header/navbar-menu/navbar-menu.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ReviewsComponent    
-  ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     FormsModule,
-    HttpModule,
+    AppRoutingModule,
     HeaderModule,
     FooterModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,    
+    NavbarMenuComponent    
+  ],
+  providers: [    
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}
