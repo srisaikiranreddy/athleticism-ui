@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Coustard&display=swap" rel="stylesheet');
+
+.main-wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 8px;
+    width: 1180px;
+  }
+  @media (max-width: 1200px) {
+    .main-wrapper {
+      padding: 0 24px;
+      width: 100%;
+   }
+  }
+  @media (max-width: 1200px) and (max-width: 500px) {
+    .main-wrapper {
+      padding: 0 16px;
+   }   
+  }
+
+:host {
+    margin-bottom: 0;
+    border-bottom: 0;
+    color: #333434;
+  }
+  
+  .top-bar {
+    background-color: rgb(0,182,183);
+    font-family: 'Coustard', cursive;
+    font-size: 20px;
+    color: #F5F5F5;
+    padding: 8px*3 0;
+    /* .website-name {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 50px;
+    } 
+    .social-icons
+    {
+      align-items: right;
+      flex-direction: row;
+      justify-content: space-between;
+    }  */
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover 
+  {
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+  }
+  
+  .head {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px * 2;
+    /* .logo {
+      font-size: 3.9rem;
+      flex-shrink: 0;
+      letter-spacing: 12px;
+      padding-left: 12px;
+    } */
+  }
+  
+  
+  @media (max-width: 400px) {
+    
+  }

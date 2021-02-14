@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet');
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+
+body {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courgette', cursive !important;
+  font-size: 16px;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  background-color: white
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 13px;
+  }
+  body{
+    font-size: 13px;
+  }
+}
