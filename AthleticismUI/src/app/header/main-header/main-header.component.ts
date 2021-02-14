@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-main-header',
   templateUrl: './main-header.component.html',
-  styleUrls: ['./main-header.component.css']
+  styleUrls: ['./main-header.component.scss'],
 })
+
+
 export class MainHeaderComponent implements OnInit {
+  inputModel: any;
 
-  constructor() { }
+  displayMenu = false;
 
-  ngOnInit() {
+  menuAnchor: any;
+
+  constructor(public el: ElementRef) {
   }
 
+  ngOnInit() {
+    this.menuAnchor = this.el.nativeElement;
+  }
 }

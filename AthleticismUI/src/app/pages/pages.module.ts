@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReviewsComponent } from './reviews/reviews.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
   ],
   declarations: [
-    ReviewsComponent
+    AboutUsComponent    
   ],
-  exports:[
-    ReviewsComponent
+  exports: [
+    AboutUsComponent    
   ]
 })
 export class PagesModule { }
