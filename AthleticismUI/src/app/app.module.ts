@@ -14,7 +14,6 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { NavbarMenuComponent } from './header/navbar-menu/navbar-menu.component';
 import { environment } from '../environments/environment';
 
-
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
