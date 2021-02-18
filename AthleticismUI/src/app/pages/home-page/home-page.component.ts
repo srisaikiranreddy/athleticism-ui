@@ -11,15 +11,19 @@ import { Review } from '../../shared/Models/review';
 export class HomePageComponent implements OnInit {
   postNewReview: boolean
   reviewsData: any;
-  constructor(private reviewService:ReviewService) {
-    
+  constructor(private reviewService: ReviewService) {
+
   }
 
   ngOnInit() {
     this.postNewReview = false;
-    var test = this.reviewService.getReviews().subscribe(data =>{
+    var test = this.reviewService.getReviews().subscribe(data => {
       this.reviewsData = data;
     });
-  } 
-  
+  }
+
+  NewReview(): void {
+    this.postNewReview = !this.postNewReview;
+  }
+
 }
